@@ -3,7 +3,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start -p 4000"
   },
   "dependencies": {
     "date-fns": "^2.30.0",
