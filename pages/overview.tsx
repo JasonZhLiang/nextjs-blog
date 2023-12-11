@@ -17,9 +17,11 @@ export default function CamperVanPage() {
             <>
                 <p>Signed in as {userEmail}</p>
                 <button onClick={() => signOut()}>Sign out</button>
-                <Link href="/api/movies/list">
-                    Go to movies list page
-                </Link>
+                <p>
+                    <Link href="/api/movies/list">
+                        Go to movies list page
+                    </Link>
+                </p>
                 <img src="https://cdn.pixabay.com/photo/2017/08/11/19/36/vw-2632486_1280.png" />
             </>
         )
