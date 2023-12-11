@@ -1,5 +1,6 @@
 import '../styles/global.css';
-export default function App({ Component, pageProps }) {
+import { SessionProvider } from 'next-auth/react';
+export default function App({ Component, pageProps: { session, ...pageProps } }) {
     return (
         <div>
             <style jsx global>{`
@@ -21,7 +22,9 @@ export default function App({ Component, pageProps }) {
                 } */}
             `}</style>
             <p>shared content set from _app.js</p>
-            <Component {...pageProps} />
+            <SessionProvider session={session}>
+                <Component {...pageProps} />
+            </SessionProvider>
         </div>
     )
 }

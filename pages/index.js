@@ -21,6 +21,9 @@ export default function Home({ allPostsData }) {
       <h1>
         Read <Link href="/posts/first-post">your first post here!</Link>
       </h1>
+      <h1>
+        Read <Link href="/overview">try next-auth v4 for pages router!</Link>
+      </h1>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
